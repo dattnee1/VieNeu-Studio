@@ -1,0 +1,31 @@
+{
+  "name": "vieneu-studio",
+  "version": "1.0.0",
+  "description": "VieNeu Studio — desktop UI for VieNeu-TTS v3 Turbo",
+  "main": "electron/main.js",
+  "author": "You",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.yourname.vieneustudio",
+    "productName": "VieNeu Studio",
+    "files": [
+      "electron/**/*",
+      "renderer/**/*",
+      "backend/**/*"
+    ],
+    "extraResources": [
+      { "from": "backend", "to": "backend" }
+    ],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" },
+    "linux": { "target": "AppImage" }
+  }
+}

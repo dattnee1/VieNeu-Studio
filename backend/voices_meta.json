@@ -1,0 +1,13 @@
+{
+  "_comment": "Maps a voice id (as returned by tts.list_preset_voices()) to display metadata. Unlisted voices fall back to 'Chưa phân loại'. Edit freely as you learn more voice ids from your install.",
+  "Adam": { "gender": "nam", "region": "nam", "style": "tu_nhien" },
+  "Xuân Vĩnh": { "gender": "nam", "region": "nam", "style": "tu_nhien" },
+  "Thái Sơn": { "gender": "nam", "region": "nam", "style": "ke_chuyen" },
+  "Thùy Dung": { "gender": "nu", "region": "nam", "style": "tu_nhien" },
+  "Mỹ Duyên": { "gender": "nu", "region": "nam", "style": "tu_nhien" },
+  "Minh Đức": { "gender": "nam", "region": "bac", "style": "tin_tuc" },
+  "Phạm Tuyên": { "gender": "nam", "region": "bac", "style": "ke_chuyen" },
+  "Trúc Ly": { "gender": "nu", "region": "bac", "style": "tu_nhien" },
+  "Mai Anh": { "gender": "nu", "region": "bac", "style": "tu_nhien" },
+  "Quỳnh Anh": { "gender": "nu", "region": "bac", "style": "tin_tuc" }
+}

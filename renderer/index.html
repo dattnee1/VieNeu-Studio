@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: http://127.0.0.1:* https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';" />
+<title>VieNeu Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">羽</span>
+      <div class="brand-text">
+        <span class="brand-name">VieNeu</span>
+        <span class="brand-sub">Studio</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-tab="studio">
+        <span class="nav-dot"></span> Đọc văn bản
+      </button>
+      <button class="nav-item" data-tab="clone">
+        <span class="nav-dot"></span> Nhân bản giọng
+      </button>
+      <button class="nav-item" data-tab="conversation">
+        <span class="nav-dot"></span> Hội thoại
+      </button>
+      <button class="nav-item" data-tab="story">
+        <span class="nav-dot"></span> Truyện
+      </button>
+      <button class="nav-item" data-tab="library">
+        <span class="nav-dot"></span> Thư viện giọng
+      </button>
+      <button class="nav-item" data-tab="history">
+        <span class="nav-dot"></span> Lịch sử
+      </button>
+      <button class="nav-item" data-tab="settings">
+        <span class="nav-dot"></span> Cài đặt
+      </button>
+    </nav>
+
+    <div class="engine-card">
+      <div class="engine-row">
+        <span class="engine-label">Mô hình</span>
+        <span class="engine-value">VieNeu-TTS v3 Turbo</span>
+      </div>
+      <div class="engine-row">
+        <span class="engine-label">Codec</span>
+        <span class="engine-value mono">MOSS-Audio-Tokenizer-Nano</span>
+      </div>
+      <div class="engine-row">
+        <span class="engine-label">Bộ âm vị</span>
+        <span class="engine-value mono">sea-g2p</span>
+      </div>
+      <div class="engine-row">
+        <span class="engine-label">Chất lượng</span>
+        <span class="engine-value">48 kHz</span>
+      </div>
+      <div class="status-line" id="backend-status">
+        <span class="status-dot" id="status-dot"></span>
+        <span id="status-text">Đang khởi động engine…</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="stage">
+    <div id="error-banner" class="error-banner" style="display:none;"></div>
+
+    <!-- STUDIO TAB -->
+    <section class="panel active" id="tab-studio">
+      <header class="panel-head">
+        <h1>Đọc văn bản</h1>
+        <p>Chuyển văn bản thành giọng nói tự nhiên với giọng dựng sẵn của v3 Turbo.</p>
+      </header>
+
+      <div class="workspace">
+        <div class="editor-card">
+          <textarea id="studio-text" placeholder="Nhập văn bản tiếng Việt ở đây… ví dụ: Trời ơi, cái giọng nó tự nhiên mà nó mượt mà dã man luôn."></textarea>
+          <div class="cue-row">
+            <span class="cue-label">Sắc thái</span>
+            <button class="cue-chip" data-cue="[cười]">cười</button>
+            <button class="cue-chip" data-cue="[thở dài]">thở dài</button>
+            <button class="cue-chip" data-cue="[hắng giọng]">hắng giọng</button>
+          </div>
+        </div>
+
+        <aside class="side-card">
+          <label class="field-label">Giọng đọc</label>
+          <select id="studio-voice" class="select"></select>
+
+          <label class="field-label">Seed <span class="hint-inline">(giữ nguyên số này = giữ nguyên giọng đọc)</span></label>
+          <div class="seed-row">
+            <input id="studio-seed" class="text-input seed-input" type="number" value="1" />
+            <button class="ghost-btn small" id="studio-seed-random" title="Đổi sang giọng ngẫu nhiên khác">🎲 Ngẫu nhiên</button>
+          </div>
+
+          <div class="seal-wrap">
+            <button class="seal" id="studio-generate">
+              <svg class="seal-ring" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" />
+              </svg>
+              <span class="seal-label" id="studio-generate-label">Tạo giọng nói</span>
+            </button>
+          </div>
+
+          <audio id="studio-audio" controls class="player"></audio>
+          <a id="studio-download" class="download-link" download="vieneu_output.wav" style="display:none;">Tải file .wav</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CLONE TAB -->
+    <section class="panel" id="tab-clone">
+      <header class="panel-head">
+        <h1>Nhân bản giọng</h1>
+        <p>Tải lên 3–8 giây âm thanh mẫu để tạo giọng nói tức thì.</p>
+      </header>
+
+      <div class="workspace">
+        <div class="editor-card">
+          <textarea id="clone-text" placeholder="Văn bản muốn đọc bằng giọng đã nhân bản…"></textarea>
+          <label class="field-label">Nội dung của đoạn ghi mẫu (tuỳ chọn, giúp nhân bản chính xác hơn)</label>
+          <input id="clone-ref-text" class="text-input" type="text" placeholder="Nội dung được nói trong file mẫu…" />
+        </div>
+
+        <aside class="side-card">
+          <label class="field-label">File mẫu (.wav, .mp3)</label>
+          <input id="clone-file" class="file-input" type="file" accept="audio/*" />
+          <span class="hint" id="clone-file-name">Chưa chọn file</span>
+
+          <div class="seal-wrap">
+            <button class="seal" id="clone-generate">
+              <svg class="seal-ring" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" />
+              </svg>
+              <span class="seal-label" id="clone-generate-label">Nhân bản &amp; đọc</span>
+            </button>
+          </div>
+
+          <audio id="clone-audio" controls class="player"></audio>
+          <a id="clone-download" class="download-link" download="vieneu_cloned.wav" style="display:none;">Tải file .wav</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONVERSATION TAB -->
+    <section class="panel" id="tab-conversation">
+      <header class="panel-head">
+        <h1>Hội thoại nhiều giọng</h1>
+        <p>Dựng kịch bản podcast / hội thoại nhiều nhân vật, xử lý theo lô.</p>
+      </header>
+
+      <div class="workspace workspace-wide">
+        <div class="editor-card">
+          <div id="convo-lines" class="convo-lines"></div>
+          <button class="ghost-btn" id="convo-add-line">+ Thêm lời thoại</button>
+        </div>
+
+        <aside class="side-card">
+          <label class="field-label">Gán giọng cho nhân vật</label>
+          <div id="convo-speaker-voices" class="speaker-voice-list"></div>
+
+          <div class="seal-wrap">
+            <button class="seal" id="convo-generate">
+              <svg class="seal-ring" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" />
+              </svg>
+              <span class="seal-label" id="convo-generate-label">Tạo hội thoại</span>
+            </button>
+          </div>
+
+          <audio id="convo-audio" controls class="player"></audio>
+          <a id="convo-download" class="download-link" download="vieneu_conversation.wav" style="display:none;">Tải file .wav</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STORY (TRUYỆN) TAB -->
+    <section class="panel" id="tab-story">
+      <header class="panel-head">
+        <h1>Truyện nhiều nhân vật</h1>
+        <p>
+          Dán nội dung truyện. Dòng có cú pháp <code>Tên nhân vật: lời thoại</code>
+          sẽ do nhân vật đó đọc; các dòng còn lại do người kể chuyện đọc.
+        </p>
+      </header>
+
+      <div class="workspace workspace-wide">
+        <div class="editor-card">
+          <textarea id="story-text" placeholder="Ngày xưa, có một cô bé tên là Lan sống trong một ngôi làng nhỏ.
+Lan: Mẹ ơi, con muốn đi chơi trong rừng.
+Mẹ nhìn con gái, lo lắng.
+Mẹ: Con không được đi một mình, nguy hiểm lắm."></textarea>
+          <button class="ghost-btn" id="story-parse">Phân tích nhân vật</button>
+          <div id="story-parse-status" class="settings-status"></div>
+        </div>
+
+        <aside class="side-card">
+          <label class="field-label">Giọng người kể chuyện</label>
+          <select id="story-narrator-voice" class="select"></select>
+
+          <label class="field-label" id="story-characters-label" style="display:none;">Gán giọng cho nhân vật</label>
+          <div id="story-character-voices" class="speaker-voice-list"></div>
+
+          <div class="seal-wrap">
+            <button class="seal" id="story-generate" disabled>
+              <svg class="seal-ring" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" />
+              </svg>
+              <span class="seal-label" id="story-generate-label">Tạo audiobook</span>
+            </button>
+          </div>
+
+          <audio id="story-audio" controls class="player"></audio>
+          <a id="story-download" class="download-link" download="vieneu_story.wav" style="display:none;">Tải file .wav</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LIBRARY TAB -->
+    <section class="panel" id="tab-library">
+      <header class="panel-head">
+        <h1>Thư viện giọng</h1>
+        <p>Tìm và nghe thử từng giọng đọc dựng sẵn của v3 Turbo.</p>
+      </header>
+
+      <input id="lib-search" class="text-input lib-search" type="text" placeholder="Tìm theo tên giọng…" />
+
+      <div class="filter-row">
+        <span class="filter-label">Giới tính</span>
+        <button class="filter-chip active" data-filter="gender" data-value="all">Tất cả</button>
+        <button class="filter-chip" data-filter="gender" data-value="nu">Nữ</button>
+        <button class="filter-chip" data-filter="gender" data-value="nam">Nam</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Vùng miền</span>
+        <button class="filter-chip active" data-filter="region" data-value="all">Tất cả</button>
+        <button class="filter-chip" data-filter="region" data-value="bac">Bắc</button>
+        <button class="filter-chip" data-filter="region" data-value="trung">Trung</button>
+        <button class="filter-chip" data-filter="region" data-value="nam">Nam</button>
+      </div>
+
+      <div id="lib-count" class="lib-count"></div>
+      <div id="lib-list" class="lib-list"></div>
+    </section>
+
+    <!-- HISTORY TAB -->
+    <section class="panel" id="tab-history">
+      <header class="panel-head">
+        <h1>Lịch sử</h1>
+        <p>Các bản đọc gần đây trong phiên làm việc này.</p>
+      </header>
+      <div id="history-list" class="history-list">
+        <p class="empty-note">Chưa có bản ghi nào. Tạo giọng nói ở tab "Đọc văn bản" để bắt đầu.</p>
+      </div>
+    </section>
+
+    <!-- SETTINGS TAB -->
+    <section class="panel" id="tab-settings">
+      <header class="panel-head">
+        <h1>Cài đặt</h1>
+        <p>Cấu hình engine chạy trên CPU của bạn.</p>
+      </header>
+
+      <div class="settings-card">
+        <h2 class="settings-heading">Bộ xử lý (CPU)</h2>
+        <div class="cpu-info-row">
+          <div class="cpu-stat">
+            <span class="cpu-stat-value" id="cpu-logical">–</span>
+            <span class="cpu-stat-label">Nhân luận lý (logical)</span>
+          </div>
+          <div class="cpu-stat">
+            <span class="cpu-stat-value" id="cpu-physical">–</span>
+            <span class="cpu-stat-label">Nhân vật lý (physical)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-card">
+        <h2 class="settings-heading">Số luồng xử lý (ONNX threads)</h2>
+        <p class="settings-desc">
+          Đây là số luồng nội bộ mà engine dùng để tính toán mỗi lần tạo giọng nói.
+          Đây <em>không phải</em> là số tiến trình song song — nó ảnh hưởng đến độ ổn
+          định của giọng đọc: khi engine dùng nhiều hơn 1 luồng, thứ tự cộng dồn phép
+          tính dấu phẩy động (floating point) có thể thay đổi giữa các lần chạy, khiến
+          cùng một giọng + cùng seed đôi khi ra âm thanh hơi khác nhau.
+        </p>
+
+        <div class="thread-options" id="thread-options">
+          <!-- populated by app.js -->
+        </div>
+
+        <div class="thread-custom-row">
+          <label for="thread-custom-input" class="thread-custom-label">Tùy chỉnh:</label>
+          <input type="range" id="thread-custom-input" class="thread-slider" min="1" max="8" step="1" value="1" />
+          <span class="thread-custom-value" id="thread-custom-value">1</span>
+        </div>
+
+        <div class="settings-status" id="thread-status"></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
