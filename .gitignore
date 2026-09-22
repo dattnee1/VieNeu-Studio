@@ -1,1 +1,23 @@
+# Dependencies
 node_modules/
+backend/.venv/
+.venv/
+
+# Build & distribution
+dist/
+build/
+
+# Models (Dung lượng lớn >100MB không thể đẩy lên GitHub)
+backend/models/
+backend/piper_models/
+
+# Python cache & temp files
+__pycache__/
+backend/__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# IDE
+.vscode/
+.idea/

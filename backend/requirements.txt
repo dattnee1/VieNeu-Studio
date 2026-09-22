@@ -3,3 +3,10 @@ fastapi
 uvicorn[standard]
 python-multipart
 psutil
+faster-whisper
+soundfile
+numpy
+librosa
+imageio-ffmpeg
+pyopenjtalk
+jieba

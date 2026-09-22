@@ -7,25 +7,44 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder"
+    "dist": "electron-builder --win nsis",
+    "dist:portable": "electron-builder --win portable",
+    "dist:dir": "electron-builder --dir"
   },
   "devDependencies": {
     "electron": "^31.0.0",
     "electron-builder": "^24.13.3"
   },
   "build": {
-    "appId": "com.yourname.vieneustudio",
+    "appId": "com.vieneu.studio",
     "productName": "VieNeu Studio",
+    "directories": {
+      "output": "dist"
+    },
     "files": [
       "electron/**/*",
-      "renderer/**/*",
-      "backend/**/*"
+      "renderer/**/*"
     ],
     "extraResources": [
-      { "from": "backend", "to": "backend" }
+      {
+        "from": "backend",
+        "to": "backend",
+        "filter": [
+          "**/*",
+          "!**/__pycache__/**",
+          "!**/*.pyc",
+          "!**/.venv/**"
+        ]
+      }
     ],
-    "win": { "target": "nsis" },
-    "mac": { "target": "dmg" },
-    "linux": { "target": "AppImage" }
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
   }
 }

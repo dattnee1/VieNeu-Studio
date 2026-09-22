@@ -1,13 +1,3138 @@
 {
-  "_comment": "Maps a voice id (as returned by tts.list_preset_voices()) to display metadata. Unlisted voices fall back to 'Chưa phân loại'. Edit freely as you learn more voice ids from your install.",
-  "Adam": { "gender": "nam", "region": "nam", "style": "tu_nhien" },
-  "Xuân Vĩnh": { "gender": "nam", "region": "nam", "style": "tu_nhien" },
-  "Thái Sơn": { "gender": "nam", "region": "nam", "style": "ke_chuyen" },
-  "Thùy Dung": { "gender": "nu", "region": "nam", "style": "tu_nhien" },
-  "Mỹ Duyên": { "gender": "nu", "region": "nam", "style": "tu_nhien" },
-  "Minh Đức": { "gender": "nam", "region": "bac", "style": "tin_tuc" },
-  "Phạm Tuyên": { "gender": "nam", "region": "bac", "style": "ke_chuyen" },
-  "Trúc Ly": { "gender": "nu", "region": "bac", "style": "tu_nhien" },
-  "Mai Anh": { "gender": "nu", "region": "bac", "style": "tu_nhien" },
-  "Quỳnh Anh": { "gender": "nu", "region": "bac", "style": "tin_tuc" }
+  "_comment": "Maps a voice id or voice name to display metadata.",
+  "Minh Đức": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Phạm Tuyên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thái Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Xuân Vĩnh": {
+    "gender": "nam",
+    "region": "nam",
+    "style": "tu_nhien"
+  },
+  "Thanh Bình": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trúc Ly": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Ngọc Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đoan Trang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mai Anh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Thục Đoan": {
+    "gender": "nu",
+    "region": "nam",
+    "style": "ke_chuyen"
+  },
+  "Minh Triết": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Thùy Dung": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Quang Sơn": {
+    "gender": "nam",
+    "region": "trung",
+    "style": "tu_nhien"
+  },
+  "Ngọc Trân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mỹ Duyên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quỳnh Anh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Đức Trí": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Kim Thanh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Ngọc Huyền": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Adam": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "An Khang": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "An Nhiên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Anh Dũng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Bích Ngọc": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Anh Thư": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Adam kể chuyện": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Bảo Long": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Bảo Ngân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Anh Phi": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Bảo Khánh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Bảo Ngọc": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Bảo Vy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Bạch Tuyết": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Cẩm Hồng": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Diễm Mỹ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Diệu Anh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hoàng Nam": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Huy Lê": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Huyền Trang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Gia Phúc": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hùng Trần": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Chí Thành": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hương Giang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Hạ Vy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hồng Đào": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Khánh Tú": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà My": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khôi Nguyên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Bảo Trâm": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Kim Ngân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kim Oanh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kiều Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kiều Trang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Lan Chi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lan Hương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thanh Nhã": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hồng Nhung": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Lê Bình": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mai Chi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Hào": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Ngọc": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mạnh Khánh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khánh Vy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mẫn Nghi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mộng Kiều": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Chi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Kim Chi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mỹ Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Ngọc Diễm": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Ngọc Lan": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Nhã Trang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Nhã Uyên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Nhật Phong": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Ninh Đôn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Phúc Anh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quang Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quang Nguyên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quang Vinh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quốc Cường": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quốc Thắng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Sang Trường": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thanh Hoa": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thanh Ngọc": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thanh Trúc": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Sơn Trần": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thiện Nhân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thu Hiền": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thiên Ân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thu Trang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thu Tuyến": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thùy An": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thùy Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thúy Tiên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thúy Viên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thảo Vy": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tiểu Hồng": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tiểu Long": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Triệu Dương": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trung Kiên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trung Nguyễn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trấn Thành": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trọng Nghĩa": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tuyết Mai": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tuấn Kiệt": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tuệ Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tùng Đăng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tấn Lợi": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lan Phương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Vân Hương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000003": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thẩm Lục Hoài": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000004": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Ánh Vân Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000006": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thẩm Hoài Mộc": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000007": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Thu Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000009": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Anh Phương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000010": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quân Hồng": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Quân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quân Huyền": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000012": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hạ Lam": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000014": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Sáng Kể": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000015": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hương Minh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000016": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Hải": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000017": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Anh Vũ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000020": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kỳ Hạ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000021": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Kỳ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000022": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kế Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000023": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tuấn Kỷ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000024": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Kết 3": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000025": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trí Khánh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000026": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Kỳ Ân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000028": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kỳ Liên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000029": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Khanh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000030": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Kỳ Anh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000031": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Triệu Thuý Hân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000032": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tạ Niên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000033": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đoá Vân Xuân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000034": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hãn Chi Hoa": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000035": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Kỳ Yến": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000036": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Bảo Duy": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000085": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Dương": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000002": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đào Tấn Thành": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000088": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Triệu Huy Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000089": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thẩm Quỳnh Ân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000090": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tạ Thanh An": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000091": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Dư Niệm An": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000092": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Dư Thanh Loan": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000098": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tuyến Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000011": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Cẩm Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000002": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Văn Sáu": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000087": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Cường": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000003": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Văn Khánh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000010": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tuyết Vy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-0-000005": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000016": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quốc Vinh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000004": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Vân Khánh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000023": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Linh Hương 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000026": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quân Phong": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000027": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Long An Thành": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000028": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thanh Hương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000030": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quốc Mạnh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000031": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hải Phong": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000033": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trí Phương": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000037": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Tú": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000038": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000040": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Song Thành Ninh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000042": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hùng Phát": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000043": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Lê": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000044": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hương Sâm": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000045": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mây Duyên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000047": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trường Giang": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000006": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hải Minh 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000051": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quân Hải": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000052": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hữu Quân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000053": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Anh Tuyết": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000055": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Phượng": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000056": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quân Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000057": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Văn Tâm": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000058": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hạnh Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000059": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Linh Mây": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000060": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mạnh Quân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000061": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thái Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000062": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khánh Hà": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000064": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000065": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tú Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000066": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tú Quảng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000067": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Vinh Sáng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000068": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hà Giang": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000069": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mạnh Quân 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000070": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Ánh Hương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000071": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hà Châu": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000073": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Sáng 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000074": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thuỷ Tiên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000075": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Văn Kiên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000076": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quân Tú Quang": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000077": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tấn Hưởng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000078": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khánh Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000079": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Đức Hiếu": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000080": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Sơn Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000082": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Anh Khang": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000084": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Bảo Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000017": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hải Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000013": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Hạo": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000050": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hà Tâm": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000090": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tuấn Duy": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000085": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trân Linh Phương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000088": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hà Vân 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000094": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Tuấn Lương": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000086": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Vũ Nam": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000096": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hữu Lộc": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000093": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Văn Quân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000091": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Sơn Hà": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000101": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khánh Luân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000099": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trân Hà Nhi 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000095": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Gia Hân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000100": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trân Minh Uyển": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000102": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trân Hà Lâm": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000103": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khánh Hà 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000104": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Bảo Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000110": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trân Hà Túy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000107": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hương Sơn": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000106": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-2-000001": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Linh Vy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000011": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Minh Công": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000015": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Tố Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000017": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Hằng Phương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000000": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Minh Sâm": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000054": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Hải Nghi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000094": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Tuyên Minh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000018": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Hà Tín": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000145": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Hà Liên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000192": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000494": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Hữu Lâm": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000113": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quốc Bảo": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000000": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Xuân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000002": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mạnh Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000007": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hương Anh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-1-000108": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thành Trung": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000009": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Anh Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "vieneu-2-000097": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Minh Hoa": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000008": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hương Tiên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000010": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đức Thái": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000014": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thanh Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000011": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Tuyên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000012": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quốc Minh Thanh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000013": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Huy Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000021": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Thúy": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000022": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mạnh Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000023": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Tú": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000016": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thanh Thảo": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000018": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Khánh Dũng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000015": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hùng Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000028": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trúc Thịnh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000029": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Chí Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000024": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Ánh Vân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000025": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mạnh Tuấn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000032": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Soạn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000027": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000033": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Thảo Vân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000031": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tùng Mạnh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000037": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Ánh Tuyền": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000038": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Kế": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000039": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Dạo Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000040": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Thắng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000034": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Sáng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000036": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trí Sáng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000047": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Liên Hương": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000048": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Yến Ngọc Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000049": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quân Sáng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000042": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Khai Ân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000051": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hùng Kể": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000052": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Gia Huy": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000053": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Kỳ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000054": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Kệ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000055": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lâm Mộc Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000056": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tấn Vĩnh Kế": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000058": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Kết": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000063": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hải Kể": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000064": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tú Khai": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000065": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Ngưu Yên Hân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000067": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quân Kế": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000068": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Kể Minh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000069": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Minh Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000070": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Phó Lục Thần": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000072": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quân Kể Chuyện": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000073": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Tú": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000075": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hùng Kế": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000076": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kế Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000080": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Quân Kể": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000079": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trí Kể": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000082": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trí Tuấn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000043": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Giang Kệ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000081": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kỳ Anh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000086": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Nhi Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000084": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Sơn Tường": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000085": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Cường Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000035": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Kỳ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000087": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trí Kỳ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000092": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hân Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000094": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Tuyến Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000088": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trân Hà Kế": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000096": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kỳ Sáng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000097": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Thảo": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000089": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hạnh Khai": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000099": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Linh Ngọc An": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000101": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hạnh Kỳ": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000103": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Trân Vân Hoa": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000098": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hoài Đinh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000104": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lâm An An": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000105": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Anh Thư": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000106": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Cao Kỳ Vân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000109": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lục Hoài Uyên": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000107": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lam Hân": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000113": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Lục Sơn Hạ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000111": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Giang Hạc Thành": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000162": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Chiu Linh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000123": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Hân Uyên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000163": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Sơn Kỳ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000091": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hạnh Kể": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000494": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Hà Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000000": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Phương Nam": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000004": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Sơn Quân": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000008": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Linh Kể Chuyện": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-3-000095": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mộng Tiên": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000009": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hà Phương 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000019": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hùng Minh 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000013": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trung Anh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000005": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Yến Minh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000016": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Khoa": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000022": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hùng Khoảng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000020": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hùng Duy": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000023": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trần Anh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000025": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quốc Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000027": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hải Khoảng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000029": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000026": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Kỳ Minh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000031": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000033": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Trúc Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000040": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Tú 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000048": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Yến Thanh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000035": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Khải Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000034": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Minh Sáng 3": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000039": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mạnh Tứ": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000073": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hạnh Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000053": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Hoàng Sơn": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000064": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "James": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000005": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Mẫn Huỳnh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000066": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Olivia": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000014": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Kỳ Sơn 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000077": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Iris": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000026": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Minh Quảng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "vieneu-5-000079": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Andrew": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000048": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Samuel": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000061": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Jack": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000108": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Julia": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000042": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Isabella": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000010": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Emma": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000018": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Sophia": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000129": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Marcus Loan": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000157": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Viết Linh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Việt Hùng": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Vân Anh": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Vũ Thành": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Xuân Mai": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Yến Nhi": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Đô Trịnh": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Connor": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000153": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đại Nghĩa": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đức Huy": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Gregory": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000166": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Robert 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "vieneu-ad-000167": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "ke_chuyen"
+  },
+  "Đăng Khoa": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Kim Thanh 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": null
+  },
+  "Mai Anh 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Minh Triết 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Ngọc Trân 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Phạm Tuyên 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Quỳnh Anh 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Mỹ Duyên 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": null
+  },
+  "Thùy Dung 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Trúc Ly 2": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Thái Sơn 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "doc_truyen"
+  },
+  "Minh Đức 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": "tin_tuc"
+  },
+  "Quỳnh Anh 3": {
+    "gender": "nu",
+    "region": "bac",
+    "style": "tu_nhien"
+  },
+  "Đức Trí 2": {
+    "gender": "nam",
+    "region": "bac",
+    "style": null
+  }
 }

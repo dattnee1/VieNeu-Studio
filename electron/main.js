@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const { spawn } = require('child_process');
 const http = require('http');
@@ -9,24 +9,105 @@ const BACKEND_URL = `http://127.0.0.1:${BACKEND_PORT}`;
 let backendProcess = null;
 let mainWindow = null;
 
+function getPiperModelsDir() {
+  const fs = require('fs');
+  let modelsDir;
+  if (app.isPackaged) {
+    modelsDir = path.join(app.getPath('userData'), 'piper_models');
+  } else {
+    modelsDir = path.join(__dirname, '..', 'backend', 'piper_models');
+  }
+  if (!fs.existsSync(modelsDir)) {
+    fs.mkdirSync(modelsDir, { recursive: true });
+  }
+  return path.resolve(modelsDir);
+}
+
+ipcMain.handle('import-voice-files', async () => {
+  const { canceled, filePaths } = await dialog.showOpenDialog(mainWindow, {
+    title: 'Chọn file giọng đọc ONNX (.onnx và .onnx.json)',
+    properties: ['openFile', 'multiSelections'],
+    filters: [
+      { name: 'Piper ONNX Voice Files (*.onnx, *.onnx.json)', extensions: ['onnx', 'json'] }
+    ]
+  });
+
+  if (canceled || !filePaths || filePaths.length === 0) return { success: false, count: 0 };
+
+  const fs = require('fs');
+  const targetDir = getPiperModelsDir();
+  let importedCount = 0;
+  const importedNames = [];
+
+  for (const srcPath of filePaths) {
+    const baseName = path.basename(srcPath);
+    const destPath = path.join(targetDir, baseName);
+    fs.copyFileSync(srcPath, destPath);
+
+    // If user only selected .onnx, check if matching .onnx.json exists in same source folder
+    if (baseName.endsWith('.onnx') && !baseName.endsWith('.onnx.json')) {
+      const jsonCandidate1 = srcPath + '.json';
+      const jsonCandidate2 = srcPath.replace(/\.onnx$/, '.json');
+      if (fs.existsSync(jsonCandidate1)) {
+        fs.copyFileSync(jsonCandidate1, path.join(targetDir, path.basename(jsonCandidate1)));
+      } else if (fs.existsSync(jsonCandidate2)) {
+        fs.copyFileSync(jsonCandidate2, path.join(targetDir, path.basename(jsonCandidate2)));
+      }
+      importedCount++;
+      importedNames.push(baseName.replace(/\.onnx$/, ''));
+    }
+  }
+
+  return { success: true, count: importedCount, names: importedNames };
+});
+
+ipcMain.handle('open-folder', async (_e, targetPath) => {
+  const fs = require('fs');
+  const p = targetPath || getPiperModelsDir();
+  if (!fs.existsSync(p)) {
+    fs.mkdirSync(p, { recursive: true });
+  }
+  const fullPath = path.resolve(p);
+  const errMsg = await shell.openPath(fullPath);
+  if (errMsg) {
+    if (process.platform === 'win32') {
+      const { exec } = require('child_process');
+      exec(`explorer.exe "${fullPath}"`);
+    }
+  }
+  return fullPath;
+});
+
+function getBackendDir() {
+  return app.isPackaged
+    ? path.join(process.resourcesPath, 'backend')
+    : path.join(__dirname, '..', 'backend');
+}
+
 function resolvePython() {
-  // Prefer a bundled venv python if present (set up by setup_backend.bat/.sh),
-  // otherwise fall back to whatever "python" is on PATH.
+  const backendDir = getBackendDir();
   const venvPy = process.platform === 'win32'
-    ? path.join(__dirname, '..', 'backend', '.venv', 'Scripts', 'python.exe')
-    : path.join(__dirname, '..', 'backend', '.venv', 'bin', 'python');
+    ? path.join(backendDir, '.venv', 'Scripts', 'python.exe')
+    : path.join(backendDir, '.venv', 'bin', 'python');
   const fs = require('fs');
   if (fs.existsSync(venvPy)) return venvPy;
   return process.platform === 'win32' ? 'python' : 'python3';
 }
 
 function startBackend() {
+  const backendDir = getBackendDir();
   const pythonExe = resolvePython();
-  const serverScript = path.join(__dirname, '..', 'backend', 'server.py');
+  const serverScript = path.join(backendDir, 'server.py');
+  const modelsDir = getPiperModelsDir();
 
   backendProcess = spawn(pythonExe, [serverScript, '--port', String(BACKEND_PORT)], {
-    cwd: path.join(__dirname, '..', 'backend'),
-    env: { ...process.env },
+    cwd: backendDir,
+    env: {
+      ...process.env,
+      PYTHONIOENCODING: 'utf-8',
+      PYTHONUTF8: '1',
+      PIPER_MODELS_DIR: modelsDir,
+    },
   });
 
   backendProcess.stdout.on('data', (d) => console.log(`[vieneu-backend] ${d}`));
